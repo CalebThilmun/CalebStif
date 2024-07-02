@@ -20,6 +20,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -29,8 +30,23 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 90px; /* Adjust the navbar height here */
     z-index: 2;  /* Higher z-index */
+}
+
+.nav-brand {
+    float: left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#home-logo {
+    height: 70px; /* Adjust the logo height here */
+    width: auto; /* Adjust the width to maintain aspect ratio */
+    float: left;
+    margin-top:-14px; /* Adjust the top margin to center the logo vertically */
+    margin-bottom: 20px; /* Adjust the bottom margin to center the logo vertically */
 }
 
 .navbar a {
@@ -42,11 +58,18 @@ body {
     text-decoration: none;
 }
 
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
-    padding-left: 700px;
-    margin-top: 10px;
+    padding-left: 600px;
+    margin-top: 30px;
+    vertical-align: middle;
 }
 
 .dropdown .dropbtn {
@@ -60,9 +83,7 @@ body {
     font-family: inherit;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: white;
-}
+
 
 .dropdown-content {
     display: none;
@@ -91,30 +112,33 @@ body {
 }
 
 .sidebar {
-    height: 100%;
+    height: 100vh;
     width: 250px;
     position: fixed;
     z-index: 1;  /* Lower z-index */
     top: 0;
     left: 0;
-    background-color: rgb(105, 128, 141);
+    background-color: #5A7F7B;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 90px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+
 }
 
 .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 3px 3px 3px 32px;
     text-decoration: none;
     font-size: 15px;  /* Smaller font size */
     color: #000000;
     display: block;
     transition: 0.2s;
     background-color: #ffffff;  /* Background color for the block */
-    /*border-radius: 10%;*/
-    margin-bottom: 3px;  /* Space between blocks */
+    margin-bottom: 7px;  /* Space between blocks */
     width: 79%;  /* Adjust the width as needed */
     margin-left: auto;
     margin-right: auto;
+    overflow-y: auto;
 }
 
 .sidebar a:hover {
@@ -133,8 +157,8 @@ body {
 }
 
 .navbar a.logout-button {
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 15px 25px;
+    margin-top: 23px;
     margin-right: 15px;
     background-color: #7B61FF;  /* Button color */
     color: #f2f2f2;  /* Text color */
@@ -241,4 +265,10 @@ body {
 .label {
     text-align: center;
     width: 20px;
+}
+
+#side-bar-icon {
+padding: 10px;
+text-align: left;
+font-size: 19px;
 }
