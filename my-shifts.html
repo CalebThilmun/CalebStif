@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LAC Public Defender</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <p class="sidebar-headings">Quick Tools</p>
+        <a href="#"><i class="fa-solid fa-house-chimney" id="side-bar-icon"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-calendar-days" id="side-bar-icon"></i>My Shifts</a>
+        <a href="#"><i class="fa-regular fa-clock" id="side-bar-icon"></i>Shift Booking</a>
+        <a href="#"><i class="fa-solid fa-eye" id="side-bar-icon"></i>View All Shifts</a>
+        <a href="#"><i class="fa-solid fa-thumbtack" id="side-bar-icon"></i>Shift Check-In</a>
+        <p class="sidebar-headings">Personal</p>
+        <a href="#"><i class="fa-solid fa-file-invoice" id="side-bar-icon"></i>Duty Reporting Form</a>
+        <a href="#"><i class="fa-solid fa-user-tie" id="side-bar-icon"></i>Account Settings</a>
+        <br>
+        <br>
+      </div>
+      <div class="navbar">
+        <a href="#" class="nav-brand"><img src="assets/Public Defender Logo.png" alt="Public Defender Logo" id="home-logo"></a>
+        <div class="dropdown">
+            <select class="dropbtn">
+                <option value="">STATUS: Online</option>
+                <option value="link1">Online</option>
+                <option value="link2">Offline</option>
+                <option value="link3">Away Temporarily</option>
+              </select>
+        </div> 
+        <a href="#logout" class="logout-button">Logout</a>
+      </div>
+<br>
+<h2 class="page-heading">Active Shifts</h2>
+<br>
+<!-- Search Bar -->
+<div class="search-container">
+    <input type="text" placeholder="Search Shifts..." name="search">
+    <button type="submit" class="search-filter"><i class="fa fa-search"></i></button>
+</div>
+
+<!-- Filter Option -->
+<div class="filter-container">
+    <select>
+        <option value="">Filter..</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <button type="submit" class="search-filter"><i class="fa fa-filter"></i></button>
+</div>
+
+
+<div class="my-shifts-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Type</th>
+                <th>Priority</th>
+                <th>Date</th>
+                <th></th> <!-- This is for the edit button, no heading -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 1</td>
+                <td>Item 1</td>
+                <td>Item 1</td>
+                <td><button class="edit-button">Edit</button></td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>Item 2</td>
+                <td>Item 2</td>
+                <td>Item 2</td>
+                <td><button class="edit-button">Edit</button></td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Item 3</td>
+                <td>Item 3</td>
+                <td>Item 3</td>
+                <td><button class="edit-button">Edit</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <a href="#newbooking" class="new-booking-button">+ New Booking</a>
+    
+</div>
+</body>
+</html>
