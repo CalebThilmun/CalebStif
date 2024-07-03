@@ -338,11 +338,11 @@ td:nth-child(1), th:nth-child(1) {
 .search-container, .filter-container {
     display: inline-block;
     align-items: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 0px;
     margin-left: 270px;
     font-family: inherit;
-    font-size: smaller;
+    font-size: small;
 }
 
 input[type=text], select {
@@ -360,7 +360,8 @@ input[type=text], select {
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    margin-top: -6px;
+    margin-top: -13px;
+    margin-left: -7px;
 }
 
 .search-filter:hover {
@@ -390,3 +391,82 @@ input[type=text], select {
     background-color:#001219;
     color:white;
 }
+
+.make-booking {
+    background-color: #7B61FF; /* Purple */
+    border: none;
+    border-radius: 9px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.make-booking:hover {
+    background-color: #CA6702;
+    color: white;
+}
+
+.shifts-table-container{
+    display: inline-block;
+    border: 1px solid #5A7F7B;
+    margin-left: 260px;
+    border-radius: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.assigned-shifts-table {
+    border-bottom: 1px solid #5A7F7B;
+    width: 100%;
+    margin-left: 1px;
+}
+
+.assigned-shifts-table td:last-child{
+    padding-left:1px;
+}
+
+.check-in {
+    background-color: #7B61FF; /* Purple */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.check-in:hover{
+    background-color:#CA6702;
+    color: white;
+}
+
+.cancel-shift {
+    background-color: #001219; /* Dark dark blue */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.cancel-shift:hover{
+    background-color:#E53756;
+    color: white;
+
+}
+
